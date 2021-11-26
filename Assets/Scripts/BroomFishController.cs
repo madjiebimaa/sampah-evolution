@@ -18,39 +18,48 @@ public class BroomFishController : MonoBehaviour
     private float movementX;
     private float movementY;
 
+    public HealthBar healthBar;
+    public HealthBar batteryBar;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
 
         scores = 0;
-        hp = 1000;
+        hp = 100;
         battery = 1000;
 
         SetScoreText();
-        SetHPText();    
+        SetHPText();
         SetBatteryText();
+        healthBar.SetMaxHealth(hp);
+        batteryBar.SetMaxHealth(battery);
     }
 
     void Update()
     {
         Debug.Log("HP");
 
-        if (hp > 0) 
+        if (hp > 0)
         {
-            SetHPText();    
-        } else 
+            SetHPText();
+        }
+        else
         {
             gameOverText.text = "MODAR SIA :)";
         }
 
         if (battery > 0)
         {
-             SetBatteryText();
-        } else 
+            SetBatteryText();
+        }
+        else
         {
             gameOverText.text = "MODAR SIA :)";
         }
+        healthBar.setHealth(hp);
+        batteryBar.setHealth(battery);
     }
 
     private void OnMove(InputValue movementValue)
@@ -61,7 +70,7 @@ public class BroomFishController : MonoBehaviour
         movementY = movementVector.y;
     }
 
-    private void SetScoreText() 
+    private void SetScoreText()
     {
         scoreText.text = "Score : " + scores.ToString();
     }
@@ -85,8 +94,9 @@ public class BroomFishController : MonoBehaviour
         rb.AddForce(movement * speed);
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
-        if(other.gameObject.CompareTag("Sampah"))
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Sampah"))
         {
             other.gameObject.SetActive(false);
             scores++;
@@ -94,13 +104,13 @@ public class BroomFishController : MonoBehaviour
             SetScoreText();
         }
 
-        if(other.gameObject.CompareTag("Battery"))
+        if (other.gameObject.CompareTag("Battery"))
         {
             other.gameObject.SetActive(false);
             battery += 100000;
         }
 
-        if(other.gameObject.CompareTag("Obstacle"))
+        if (other.gameObject.CompareTag("Obstacle"))
         {
             hp -= 10;
         }
