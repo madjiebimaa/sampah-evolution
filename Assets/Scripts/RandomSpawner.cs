@@ -28,7 +28,7 @@ public class RandomSpawner : MonoBehaviour
     private void spawnEnemy()
     {
         GameObject a = Instantiate(ItemPrefab) as GameObject;
-        a.transform.position = new Vector2(Random.Range(-screenBounds.x, screenBounds.x), Random.Range(-screenBounds.y, screenBounds.y));
+        a.transform.position = new Vector2(Random.Range(-screenBounds.x*2, screenBounds.x*2), Random.Range(-screenBounds.y*2, screenBounds.y*2));
     }
     IEnumerator Spawner()
     {

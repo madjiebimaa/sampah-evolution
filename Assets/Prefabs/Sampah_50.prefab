@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 5755530104275540521}
   - component: {fileID: 3624361439992172385}
   m_Layer: 0
-  m_Name: Sampah
-  m_TagString: Sampah
+  m_Name: Sampah_50
+  m_TagString: Sampah_50
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fad0c2835f3c08d4890fee9575607929, type: 3}
+  m_Sprite: {fileID: 21300000, guid: be88626306020e641a5fa77a83f2e56e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

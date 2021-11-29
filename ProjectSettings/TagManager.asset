@@ -7,6 +7,12 @@ TagManager:
   - Sampah
   - Battery
   - Obstacle
+  - Sampah_5
+  - Sampah_7
+  - Sampah_15
+  - Sampah_20
+  - Sampah_100
+  - Sampah_50
   layers:
   - Default
   - TransparentFX
