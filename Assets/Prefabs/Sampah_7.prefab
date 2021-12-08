@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1480974022298971579}
   - component: {fileID: 5755530104275540521}
   - component: {fileID: 3624361439992172385}
+  - component: {fileID: -1846365535124171013}
   m_Layer: 0
   m_Name: Sampah_7
   m_TagString: Sampah_7
@@ -134,3 +135,15 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.2
+--- !u!114 &-1846365535124171013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480974022298971578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9cf92882163f4847991b410ecaed340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
