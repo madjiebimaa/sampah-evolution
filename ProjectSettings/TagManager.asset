@@ -7,6 +7,12 @@ TagManager:
   - Sampah
   - Battery
   - Obstacle
+  - Sampah_5
+  - Sampah_7
+  - Sampah_15
+  - Sampah_20
+  - Sampah_100
+  - Sampah_50
   layers:
   - Default
   - TransparentFX
@@ -41,6 +47,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 825850393
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

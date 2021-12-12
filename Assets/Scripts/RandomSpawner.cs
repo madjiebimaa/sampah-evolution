@@ -13,7 +13,8 @@ public class RandomSpawner : MonoBehaviour
     // private RectTransform rt;
     private Vector2 screenBounds;
 
-    private void Start() {
+    private void Start()
+    {
         // MyNewEnvironment = Instantiate(Environment) as GameObject;
 
         // rt = MyNewEnvironment.transform as RectTransform;
@@ -22,15 +23,15 @@ public class RandomSpawner : MonoBehaviour
 
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width, Screen.height));
         // screenBounds = Camera.main.ScreenToWorldPoint(new Vector2(width, height));
-        StartCoroutine(Spawner());    
+        StartCoroutine(Spawner());
     }
     private void spawnEnemy()
     {
         GameObject a = Instantiate(ItemPrefab) as GameObject;
-        a.transform.position = new Vector2(Random.Range(-screenBounds.x, screenBounds.x) , Random.Range(-screenBounds.y,  screenBounds.y));
+        a.transform.position = new Vector2(Random.Range(-screenBounds.x*2, screenBounds.x*2), Random.Range(-screenBounds.y*2, screenBounds.y*2));
     }
     IEnumerator Spawner()
-    {   
+    {
         while (true)
         {
             yield return new WaitForSeconds(respawnTime);
