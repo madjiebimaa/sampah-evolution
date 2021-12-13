@@ -192,6 +192,7 @@ public class BroomFishController : MonoBehaviour
 
             //SetScoreText();
             gameManager.UpdateScore(5);
+            FishEatAudio.sfxInstance.Audio.PlayOneShot(FishEatAudio.sfxInstance.Click);
         }
 
         if (other.gameObject.CompareTag("Sampah_7"))
@@ -201,6 +202,7 @@ public class BroomFishController : MonoBehaviour
 
             //SetScoreText();
             gameManager.UpdateScore(7);
+            FishEatAudio.sfxInstance.Audio.PlayOneShot(FishEatAudio.sfxInstance.Click);
         }
 
         if (other.gameObject.CompareTag("Sampah_15"))
@@ -210,6 +212,7 @@ public class BroomFishController : MonoBehaviour
 
             // SetScoreText();
             gameManager.UpdateScore(15);
+            FishEatAudio.sfxInstance.Audio.PlayOneShot(FishEatAudio.sfxInstance.Click);
         }
 
         if (other.gameObject.CompareTag("Sampah_20"))
@@ -230,10 +233,13 @@ public class BroomFishController : MonoBehaviour
             if (gameManager.getTier() >= 2)
             {
                 gameManager.UpdateScore(20);
+                FishEatAudio.sfxInstance.Audio.PlayOneShot(FishEatAudio.sfxInstance.Click);
+
             }
             else
             {
                 gameManager.UpdateHealth(-10);
+                FishCrashAudio.sfxInstance.Audio.PlayOneShot(FishCrashAudio.sfxInstance.Click);
             }
         }
 
@@ -254,10 +260,12 @@ public class BroomFishController : MonoBehaviour
             if (gameManager.getTier() >= 2)
             {
                 gameManager.UpdateScore(50);
+                FishEatAudio.sfxInstance.Audio.PlayOneShot(FishEatAudio.sfxInstance.Click);
             }
             else
             {
                 gameManager.UpdateHealth(-10);
+                FishCrashAudio.sfxInstance.Audio.PlayOneShot(FishCrashAudio.sfxInstance.Click);
             }
         }
 
@@ -276,10 +284,13 @@ public class BroomFishController : MonoBehaviour
             if (gameManager.getTier() >= 2)
             {
                 gameManager.UpdateScore(100);
+                FishEatAudio.sfxInstance.Audio.PlayOneShot(FishEatAudio.sfxInstance.Click);
+
             }
             else
             {
                 gameManager.UpdateHealth(-20);
+                FishCrashAudio.sfxInstance.Audio.PlayOneShot(FishCrashAudio.sfxInstance.Click);
             }
         }
 
@@ -288,12 +299,15 @@ public class BroomFishController : MonoBehaviour
             other.gameObject.SetActive(false);
             // battery += 1000;
             gameManager.UpdateBattery(1000);
+            FishEatAudio.sfxInstance.Audio.PlayOneShot(FishEatAudio.sfxInstance.Click);
+
         }
 
         if (other.gameObject.CompareTag("Obstacle"))
         {
             // hp -= 10;
             gameManager.UpdateHealth(-10);
+            FishCrashAudio.sfxInstance.Audio.PlayOneShot(FishCrashAudio.sfxInstance.Click);
         }
     }
 
