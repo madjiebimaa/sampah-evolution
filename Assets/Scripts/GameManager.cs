@@ -29,6 +29,10 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI gameOverText;
     public TextMeshProUGUI evolutionText;
 
+    public Button restartButton;
+    public Button mainMenuButton;
+    public Button resumeButton;
+
     private float leftMap = -90.0f;
     private float rightMap = 90.0f;
     private float topMap = 60.0f;
@@ -193,11 +197,24 @@ public class GameManager : MonoBehaviour
     {
         isGameActive = false;
         gameOverText.gameObject.SetActive(true);
+        restartButton.gameObject.SetActive(true);
+        mainMenuButton.gameObject.SetActive(true);
     }
 
     public int getTier()
     {
         return tier;
     }
+
+    public void mainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void restartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
 }
 
