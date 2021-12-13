@@ -20,9 +20,19 @@ public class MenuController : MonoBehaviour
         Application.Quit();
     }
 
-    public void SettingGame()
+    public void HowToPlay()
     {
-        Debug.Log("SETTINGS");
+        Debug.Log("How To Play");
+        SceneManager.LoadScene(3);
+    }
+
+    public void nextStory()
+    {
         SceneManager.LoadScene(2);
+    }
+
+    public void mainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }

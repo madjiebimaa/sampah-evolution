@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5953461840348238553}
   m_Layer: 0
   m_Name: Sampah_50_1
-  m_TagString: Untagged
+  m_TagString: Sampah_50
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
