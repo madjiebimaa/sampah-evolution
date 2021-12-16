@@ -49,28 +49,69 @@ Beberapa kali mencoba, tapi semua percobaan nya gagal, sampai suatu saat, dia me
 6. Game bersifat endless dengan tingkat kesulitan selalu bertambah
 7. Game over ketika batre habis dan robot masih di dalam air
 
-# Goals
+# Goal
 Mengambil sampah berdasarkan karakteristik (jenis atau berat) dengan selalu memperhitungkan daya baterai agar dapat membawa sampah tersebut ke lokasi pengumpulan.
 
-# Asset
-In Progress :) (Mencoba belajar membuat assets sendiri) gogogo!!!
+# Assets
+<table>
+  <tr>
+      <td><img src="./Assets/Images/Player/Player1/Broom_Fish.png"></td>
+      <td><img src="./Assets/Images/Player/Player2/Transition2/1.png"></td>
+      <td><img src="./Assets/Images/Player/Player3/Idle/Group%20161.png"></td>
+  </tr>
+   <tr>
+      <td><img src="./Assets/Images/Ikan/Magi/Group%20141.png"></td>
+      <td><img src="./Assets/Images/Ikan/Nemo/Group%20154.png"></td>
+      <td><img src="./Assets/Images/Ikan/Tuna/Group%20119.png"></td>
+  </tr>
+  <tr>
+      <td><img src="./Assets/Images/Ikan/Goldeen.png"></td>
+      <td><img src="./Assets/Images/Ikan/insan.png"></td>
+      <td><img src="./Assets/Images/Ikan/Paus_orca.png"></td>
+  </tr>
+  <tr>
+      <td><img src="./Assets/Images/Sampah/Big_Sampah_1.png"></td>
+      <td><img src="./Assets/Images/Sampah/Big_Sampah_2.png"></td>
+      <td><img src="./Assets/Images/Sampah/Jangkar.png"></td>
+  </tr>
+  <tr>
+     <td><img src="./Assets/Images/Sampah/Minuman_1.png"></td>
+     <td><img src="./Assets/Images/Sampah/Minuman_1_1.png"></td>
+     <td><img src="./Assets/Images/Sampah/Minuman_2.png"></td>
+  </tr>
+    <tr>
+     <td><img src="./Assets/Images/Sampah/Minuman_2_1.png"></td>
+     <td><img src="./Assets/Images/Sampah/Minuman_3.png"></td>
+     <td><img src="./Assets/Images/Sampah/Minuman_3_1.png"></td>
+  </tr>
+   <tr>
+     <td><img src="./Assets/Images/Sampah/Minuman_3_2.png"></td>
+     <td><img src="./Assets/Images/Sampah/Roda.png"></td>
+  </tr>
+   <!-- <tr>
+     <td><img src="./Assets/Images/Sampah/.png"></td>
+     <td><img src="./Assets/Images/Sampah/.png"></td>
+     <td><img src="./Assets/Images/Sampah/.png"></td>
+  </tr> -->
+</table>
 
-# Builds
-In Progress :)
+# Preview
+<table>
+  <tr>
+      <td><img src="./Assets/Images/Prev/Prev_1.jpeg"></td>
+  </tr>
+  <tr>
+      <td><img src="./Assets/Images/Prev/Prev_2.jpeg"></td>
+  </tr>
+  <tr>
+      <td><img src="./Assets/Images/Prev/Prev_3.jpeg"></td>
+  </tr>
+  <tr>
+      <td><img src="./Assets/Images/Prev/Prev_4.jpeg"></td>
+  </tr>
+</table>
 
-# Tampilan Game
-In Progress :)
-
-# Proses Pengembangan Produk
-1. Kami melakukan brainstorming mengenai tema yang akan dipilih dan voting game dari ide-ide yang muncul selama proses tersebut.
-2. Kami mendeskripsikan dengan terperinci hal apa saja yang dibutuhkan dan seperti apa konsep, story, objective, failure, fitur, bentuk, cara kerja, dan seluruh aspek dalam game yang akan dibuat. 
-3. Team menentukan prioritas pada tiap fitur game dan pembagian tasks secara detail.
-4. Game Artist membuat keseluruhan assets menggunakan Figma dan Game Developer melakukan pembelajaran dan pengembangan game menggunakan Visual Studio Code dan Unity Engine.
-5. Game Developer mengimplementasikan teori yang didapat dari kuliah ke dalam game dengan bantuan akses pembelajaran lainnya.
-6. Anggota melaporkan progress dari tasks yang telah disepakati.
-7. Team mengadakan meet untuk menyamakan persepsi tentang project, membahas progress, dan berkomunikasi untuk persiapan presentasi di tiap kesempatan pelaporan progress pada sesi Praktikum.
-8. Game developer mencari berbagai tutorial unity dari berbagai macam sumber.
-9. Salah satu sumber adalah learn.unity, melalui laman tersebut game developer belajar basic dari unity, mulai dari bagaimana cara membuat platform, menggerakkan suatu objek, dan juga berinteraksi dengan objek lainnya. Di dalam lama tersebut terdapat 2 pathway utama, yaitu unity essentials dan junior programmer. Game developer mengikuti pathway unity essentials sampai dengan selesai yang setara dengan 2 minggu. Dan juga berhasil mengikuti pathway junior programmer yang setara 12 minggu sampai di pertengahan pathway. Melalui pathway junior programmer game developer belajar bagaimana cara membuat button UI, membuat scene baru, manajemen data antara scene, dan juga membuat interaksi yang lebih advance.
-10. Sumber lain adalah youtube dengan beragam channel. Salah satu channel yang diikuti adalah Brackeys. Melalui channel tersebut, game developer belajar untuk membuat animasi di dalam game beserta dengan kondisi memulai ataupun berhenti dari animasi tersebut. Selain itu, melalui youtube, Game Developer mendapatkan cara untuk melakukan random spawn object menggunakan peluang.
-11. Game developer membuat “Sampah Evolution” bersamaan dengan mencari tutorial yang diperlukan. Kami bekerja berdasarkan pembagian tugas yang sudah kami diskusikan bersama di awal dan saling membantu sama lain demi terselesaikannya game yang kami buat.
-12. Kolaborasi kami lakukan melalui repository github. Kami tidak melakukan kolaborasi melalui unity hub dikarenakan takut akan adanya bentrok yang nantinya memerlukan kami untuk belajar kembali cara memperbaikinya, oleh karena itu kami menggunakan github yang sudah pernah kami gunakan.
+# Documents
+* [Assets](https://www.figma.com/file/rIjheHgHrAjRS1WXvhhCd6/GRAFKOM-P2_3)
+* [Documentation](https://docs.google.com/document/d/1YrmrxCV3LJL_GhKjlUOB1V-8qCmVzsPPBZyIcKZcEvY/edit)
+* [Demo Video](https://drive.google.com/drive/folders/1W7SKXXk6zpKeXPTcG7Wbc5sXt4hNQW8G)
